@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm install && cd ../frontend && npm install && npm run build"
+    "build": "npm install && cd ../frontend && npm install && node node_modules/react-scripts/bin/react-scripts.js build"
   },
   "keywords": [],
   "author": "",
