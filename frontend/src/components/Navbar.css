@@ -1,0 +1,56 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e; /* Slightly lighter than body */
+  padding: 0 2rem;
+  height: 60px;
+  border-bottom: 1px solid #333; /* Subtle border */
+}
+
+.navbar-brand {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-link {
+  color: #a0a0a0; /* Dimmer color for inactive links */
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+  padding: 0 0.5rem;
+  line-height: 60px; /* Vertically center text */
+}
+
+.navbar-link:hover {
+  color: #ffffff;
+}
+
+/* Style for the active NavLink */
+.navbar-link.active {
+  color: #d20a0a; /* UFC Red */
+  border-bottom: 2px solid #d20a0a;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .navbar-link {
+    font-size: 0.9rem;
+    margin-left: 0.75rem;
+  }
+}

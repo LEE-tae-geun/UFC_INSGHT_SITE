@@ -1,0 +1,76 @@
+.champion-profile {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.champion-profile:hover {
+  background-color: #2a2a2a;
+  border-color: #d20a0a;
+}
+
+.champion-image-container {
+  width: 150px;
+  height: 150px;
+  margin-right: 2rem;
+}
+
+.champion-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Use contain to see the full headshot */
+}
+
+.champion-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.champion-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.champion-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d20a0a; /* UFC Red */
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .champion-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .champion-image-container {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .champion-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .champion-image-container {
+    width: 120px;
+    height: 120px;
+  }
+  .champion-name {
+    font-size: 1.5rem;
+  }
+  .champion-title {
+    font-size: 1rem;
+  }
+}

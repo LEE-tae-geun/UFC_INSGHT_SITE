@@ -1,0 +1,135 @@
+.fighter-detail-page {
+  color: #e0e0e0;
+}
+
+.detail-header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 400px;
+}
+
+.detail-header-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detail-header-content {
+  padding: 2rem;
+}
+
+.detail-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.detail-nickname {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #a0a0a0;
+  margin: 0.5rem 0;
+}
+
+.detail-record {
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: #d20a0a;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.detail-weight-class {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #a0a0a0;
+}
+
+.detail-main-content {
+  padding: 2rem;
+}
+
+.stats-section, .history-section {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.stats-section h3, .history-section h3 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #d20a0a;
+  padding-bottom: 0.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.stat-item {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #d20a0a;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  text-transform: capitalize;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th, .history-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.history-table th {
+  font-size: 1rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+}
+
+.history-table tbody tr:hover {
+  background-color: #2a2a2a;
+}
+
+.fight-result {
+  font-weight: 700;
+}
+
+.result-win {
+  color: #4CAF50; /* Green */
+}
+
+.result-loss {
+  color: #f44336; /* Red */
+}
+
+.result-draw, .result-nc {
+  color: #a0a0a0; /* Grey */
+}

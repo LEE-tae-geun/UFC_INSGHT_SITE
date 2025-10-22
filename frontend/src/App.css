@@ -1,0 +1,8 @@
+.App {
+  /* The background color is now inherited from the body style in index.css */
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 1rem;
+}

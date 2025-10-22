@@ -1,0 +1,47 @@
+body {
+  background-color: #121212; /* Dark background for the whole page */
+}
+
+.korean-fighters-page {
+  padding: 4rem 2rem;
+  background: #1a1a1a url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23333333" fill-opacity="0.1" fill-rule="evenodd"%3E%3Cpath d="M0 40L40 0H20L0 20M40 40V20L20 40"/%3E%3C/g%3E%3C/svg%3E');
+  min-height: 100vh;
+}
+
+.korean-fighters-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.korean-fighters-header h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(210, 10, 10, 0.3), 0 0 20px rgba(210, 10, 10, 0.2);
+}
+
+.korean-fighters-header p {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  margin-top: -1rem;
+}
+
+.fighters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #a0a0a0;
+  padding: 4rem;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
