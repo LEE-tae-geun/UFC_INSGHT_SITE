@@ -4,7 +4,10 @@ async function crawlFighterDetails(fighterName) {
   const url = `https://www.ufc.com/athlete/${encodeURIComponent(fighterName)}`;
   let browser;
   try {
-    browser = await puppeteer.launch({ headless: "new" });
+    browser = await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     const page = await browser.newPage();
     await page.setUserAgent(
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"

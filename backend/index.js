@@ -29,7 +29,10 @@ app.use(
 app.get("/api/news", async (req, res) => {
   try {
     const UFC_NEWS_URL = "https://www.ufc.com/news";
-    const browser = await puppeteer.launch({ headless: "new" });
+    const browser = await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     const page = await browser.newPage();
     await page.setUserAgent(
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
@@ -70,7 +73,7 @@ app.get("/api/news", async (req, res) => {
 // UFC 랭킹 API 엔드포인트 (JSON 파일 사용)
 app.get("/api/rankings", (req, res) => {
   try {
-    const rankingsPath = path.join(__dirname, "rankings.json");
+    const rankingsPath = path.join(__dirname, "..", "rankings.json");
     const rankingsData = fs.readFileSync(rankingsPath, "utf8");
     res.json(JSON.parse(rankingsData));
   } catch (error) {
@@ -85,7 +88,10 @@ app.get("/api/rankings", (req, res) => {
 app.get("/api/events", async (req, res) => {
   try {
     const UFC_EVENTS_URL = "https://www.ufc.com/events";
-    const browser = await puppeteer.launch({ headless: "new" });
+    const browser = await puppeteer.launch({
+      headless: "new",
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
     const page = await browser.newPage();
     await page.setUserAgent(
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
